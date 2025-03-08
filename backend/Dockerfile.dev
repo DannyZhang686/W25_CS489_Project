@@ -9,4 +9,4 @@ WORKDIR /usr/src/app
 RUN mkdir /usr/src/app/.venv
 
 EXPOSE 8000/tcp
-ENTRYPOINT [ "scripts/dev.sh" ]
+ENTRYPOINT [ "/bin/bash", "scripts/dev.sh" ]
